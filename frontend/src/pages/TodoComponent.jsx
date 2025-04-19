@@ -6,7 +6,7 @@
         const [todos,setTodos]=useState([]);
         const [error,setError]=useState('');
         const [message,setMessage]=useState("");
-        const apiUrl='http://localhost:3000/';
+        const apiUrl=import.meta.env.VITE_API_URL;
 
         const [editId,setEditId]=useState(-1);
         const [editTitle,setEditTitle]=useState('');    
